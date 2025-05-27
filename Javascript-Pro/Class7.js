@@ -23,7 +23,7 @@ for(let key in obj){
 };*/
 for(let index in array){
 	console.log("I am the index of the arr ", index)
-	console.log("I am the value in the arr", [index])
+	console.log("I am the value in the arr", array[index])
 };
 
 

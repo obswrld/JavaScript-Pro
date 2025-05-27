@@ -1,10 +1,12 @@
 let numberOne = 3;
-function Math(number){
-	let numberTwo = 2;
-	function multiply(value){
-		let product = value * number
-		return product
+let numberTwo = 2;
+function getAnswer(number, secondNumber){
+	let numberThree = 4;
+	function multiply(){
+		let result = secondNumber * number * numberThree
+		return result
 	};
-	return multiply(numberTwo)
+	return multiply();
 };
-console.log(Math(numberOne))
+let finalResult = getAnswer(numberOne, numberTwo);
+console.log(finalResult);
