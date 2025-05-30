@@ -10,6 +10,12 @@ person.password = "newpassword1234";
 
 //delete person.name;
 
-//console.log(Object.values(person));
+
+//this prints the value in the variable
+console.log(Object.values(person)); 
+
+//this prints the varaibles of the object
 //console.log(Object.keys(person));
-console.log(Object.entries(person));
+
+//this prints the variable and the objects 
+//console.log(Object.entries(person));
