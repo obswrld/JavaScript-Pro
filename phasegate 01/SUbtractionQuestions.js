@@ -8,7 +8,8 @@ const prompt = require("Prompt-sync")();
 		};
 	}
 let questions = 0;
-let questions2 = 10;
+let questions2 = 3;
+let result = 0;
 while (questions < questions2){
 	let {question, answer:  correctAnswer} = getSubNumbers()
 	let userAnswer;
@@ -20,6 +21,7 @@ while (questions < questions2){
 
 		if (userAnswer === correctAnswer){
 			console.log("Very Good!")
+			result++;
 			break;
 		} else{
 			attempt--;
@@ -33,6 +35,7 @@ while (questions < questions2){
 		questions++;
 		console.log("The Next Question is:  ")
 } 
+console.log("Your score is:  " + result + " / " + questionss2);
 
 //if (attempt == 10){
 //console.log("You have used all your attempts.")
